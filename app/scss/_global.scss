@@ -1,0 +1,140 @@
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative; //for slider
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+}
+
+body {
+
+    min-width: 320px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 30px;
+    font-family: 'nunitoregular', sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper-slide {
+    display: flex;
+
+}
+
+.swiper-pagination {
+    right: 0;
+}
+
+.swiper-pagination-bullet {
+    width: auto;
+    background: transparent;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: 'nunitoregular', sans-serif;
+    font-style: normal;
+    color: rgba($color: #fff, $alpha: .5);
+    opacity: 1;
+
+    &+& {
+        margin-left: 20px;
+    }
+
+}
+
+.swiper-pagination-bullet-active {
+
+    color: #fff;
+}
+
+.container {
+    max-width: 1240px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+.page-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 120px 0 80px;
+}
+
+.title {
+    font-size: 75px;
+    line-height: 90px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.section-link {
+    display: block;
+    height: 65px;
+    padding: 18px 25px;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-color: #FDBE33 #000 #beb7af;
+    background: linear-gradient(#F3AE0F, #E38916) #E38916;
+    transition: 0.2s;
+    border-radius: 35px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.section-link:hover {
+    background: linear-gradient(#f5ae00, #f59500) #f5ae00;
+}
+
+
+.section-link:active {
+    background: linear-gradient(#f59500, #f5ae00) #f59500;
+}
